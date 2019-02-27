@@ -132,5 +132,93 @@ table {
 }
 html,
 body {
-  height: 100%;
+  max-width: 880px;
+  height: auto;
+  width: 100%;
+  margin: 0 auto;
+}
+.containter {
+  display: flex;
+  max-width: 600px;
+  font-size: 1.6rem;
+}
+header nav {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+header nav a {
+  display: flex;
+  text-decoration: none;
+  color: forestgreen;
+  font-size: 1.6rem;
+  margin-left: 4%;
+}
+header nav a:hover {
+  text-decoration: none;
+  color: red;
+}
+.intro {
+  background: ghostwhite;
+  padding: 50px 20px;
+  margin: 20px 0;
+}
+.intro h1 {
+  font-size: 2.4rem;
+  margin: 2% 0;
+  color: forestgreen;
+}
+.intro p:first-child {
+  font-size: 1.2rem;
+  border-top: 1px solid grey;
+  padding: 20px 0;
+  margin: 20px 0;
+}
+.intro p:first-child .btn {
+  padding: 1%;
+  background: grey;
+  color: white;
+  border-radius: 5%;
+}
+p {
+  color: red;
+}
+.about-me {
+  display: flex;
+  justify-content: space-between;
+}
+.about-me h2,
+.about-me h3 {
+  color: forestgreen;
+  font-size: 1.8rem;
+}
+.about-me .listen {
+  display: inline-block;
+  width: 48%;
+}
+.about-me .skills {
+  display: block;
+  width: 50%;
+  text-align: left;
+}
+.about-me TABLE {
+  width: 100%;
+}
+.about-me td {
+  border: 1px solid;
+  padding: 2%;
+}
+.history td {
+  border: 1px solid;
+  height: 50px;
+}
+.history TABLE {
+  width: 100%;
+}
+footer {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  color: white;
+  background: grey;
 }
