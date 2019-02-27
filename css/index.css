@@ -136,6 +136,7 @@ body {
   height: auto;
   width: 100%;
   margin: 0 auto;
+  background: #5e3602;
 }
 .containter {
   display: flex;
@@ -178,7 +179,7 @@ header nav a:hover {
   padding: 1%;
   background: grey;
   color: white;
-  border-radius: 5%;
+  border-radius: 5px;
 }
 p {
   color: red;
@@ -193,7 +194,7 @@ p {
   font-size: 1.8rem;
 }
 .about-me .listen {
-  display: inline-block;
+  display: block;
   width: 48%;
 }
 .about-me .skills {
@@ -203,17 +204,32 @@ p {
 }
 .about-me TABLE {
   width: 100%;
+  background: #FFE5B4;
 }
 .about-me td {
   border: 1px solid;
   padding: 2%;
 }
+.history {
+  width: 100%;
+}
+.history table {
+  background: lightgrey;
+  width: 100%;
+  align-content: space-around;
+}
 .history td {
-  border: 1px solid;
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+  height: 50px;
+  justify-content: space-around;
+}
+.history tr:first-child {
+  background: white;
   height: 50px;
 }
-.history TABLE {
-  width: 100%;
+.history tr:nth-child(3) {
+  background: white;
 }
 footer {
   display: flex;
@@ -221,4 +237,5 @@ footer {
   padding: 20px;
   color: white;
   background: grey;
+  margin-top: 40px;
 }
