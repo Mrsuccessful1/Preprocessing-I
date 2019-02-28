@@ -75,6 +75,10 @@ html, body {
 	display: flex;
 	max-width: 600px;
 	font-size: 1.6rem;
+
+	@media(max-width:500px){
+		width: 90%;
+	}
 }
 
 header {
@@ -83,9 +87,14 @@ header {
 	
 	nav{
 	width: 100%;
+	margin-top: 20px;
 	display: flex;
 	justify-content: flex-end;
 	
+
+	@media(max-width: 500px){
+		justify-content: space-evenly;
+	}
 	
 	a{
 	display: flex;
@@ -119,13 +128,18 @@ header {
 	border-top: 1px solid grey;
 	padding: 20px 0;
 	margin: 20px 0;
-
+	}
 	.btn{
 	padding: 1%;
 	background: grey;
 	color: white;
 	border-radius: @radius;
-}
+
+	@media(max-width: 500px){
+	width: 100%;
+	}
+
+
 
 }
 
@@ -140,6 +154,9 @@ p{
 	display: flex;
 	justify-content: space-between;
 	
+	@media(max-width: 500px){
+		flex-wrap: wrap;
+	}
 
 	h2, h3{
 	color: @stem;
@@ -152,12 +169,24 @@ p{
 	.listen{
 		display: block;
 		width: 48%;
+
+		@media(max-width: 500px){
+			width: 100%;
+			padding: 0 4%;
+			margin-bottom: 5%;
+		}
 	}
 
 	.skills{
 		display: block;
 		width: 50%;
 		text-align: left;
+
+		@media(max-width: 500px){
+			width: 100%;
+			padding: 4%;
+			justify-items: center;
+		}
 	}
 
 	TABLE{
@@ -174,12 +203,17 @@ p{
 
 .history {
 	width: 100%;
+	text-align: left;
 	
+	
+	h3{
+	font-size: 1.6rem;
+	}
 
 	table{
 	background: lightgrey;
 	width: 100%;
-	align-content: space-around;
+	align-content: space-evenly;
 	
 	}
 	td{
