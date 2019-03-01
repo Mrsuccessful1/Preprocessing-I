@@ -54,6 +54,197 @@ table {
 }
 
 html, body {
-    height: 100%;
+	max-width: 880px;
+	height: auto;
+	width: 100%;
+	margin: 0 auto;
+	background: rgb(94, 54, 2);
+	
 }
 
+//variables
+
+@stem: forestgreen;
+@skin: red;
+@flessh: #FFE5B4;
+@radius: 5px;
+
+
+
+.container{
+	font-size: 1.6rem;
+	margin: 0 auto;
+
+	@media(max-width:500px){
+		width: 90%;
+	}
+}
+
+header {
+	
+	
+	
+	nav{
+	width: 100%;
+	margin-top: 20px;
+	display: flex;
+	justify-content: flex-end;
+	
+
+	@media(max-width: 500px){
+		justify-content: space-evenly;
+	}
+	
+	a{
+	display: flex;
+	text-decoration: none;
+	color: @stem;
+	font-size: 1.6rem;
+	margin-left: 4%;
+	}
+
+	a:hover {
+	text-decoration: none;
+	color: @skin;
+	}
+	} 
+
+}
+
+.intro {
+	background: ghostwhite;
+	padding: 50px 20px;
+	margin: 20px 0;
+	
+	h1{ 
+	font-size: 2.4rem;	
+	margin: 2% 0;
+	color: @stem;
+	}
+
+	p:first-child {
+	font-size: 1.2rem;
+	border-top: 1px solid grey;
+	padding: 20px 0;
+	margin: 20px 0;
+	}
+	.btn{
+	padding: 1%;
+	background: grey;
+	color: white;
+	border-radius: @radius;
+
+	@media(max-width: 500px){
+	width: 100%;
+	}
+
+
+
+
+}
+
+
+}
+
+p{
+	color: @skin;
+}	
+
+.about-me{
+	display: flex;
+	justify-content: space-around;	
+	
+	.listen{
+		display: block;
+		width: 48%;
+
+		@media(max-width: 500px){
+			width: 100%;
+			padding: 0 4%;
+			margin-bottom: 5%;
+			
+		}
+	
+	}
+	.skills{
+		display: flex;
+		text-align: left;
+		align-items: center;
+		width: 45%;
+		 
+	}
+
+
+
+
+	h2, h3{
+		color: @stem;
+		font-size: 1.8rem;
+
+	
+
+	}
+
+	
+
+	TABLE{
+		width: 100%;
+		background: @flessh;
+		
+	}
+
+	td{
+		
+		border: 1px solid;
+		padding: 2%
+	}
+	
+}
+
+
+.history {
+	text-align: center;	
+
+	
+	h3 {
+	margin:20px 0 10px;
+	font-size: 1.6rem;
+	color: @stem;
+	}
+
+	table {
+	background: lightgrey;
+	width: 100%;
+	
+
+
+		td {
+		border-top: 1px solid;
+		border-bottom: 1px solid;
+		height:50px;
+		
+		}
+	
+		tr:nth-child(odd){
+			background: white;
+			height: 50px;
+			justify-content: center;
+			
+		
+		}
+	
+		
+	}
+
+	
+}
+
+
+footer{
+	display: flex;
+	justify-content: center;
+	padding:20px;
+	color: white;
+	background: grey;
+	margin-top: 40px;
+}
