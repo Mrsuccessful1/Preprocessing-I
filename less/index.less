@@ -71,10 +71,9 @@ html, body {
 
 
 
-.containter{
-	display: flex;
-	max-width: 600px;
+.container{
 	font-size: 1.6rem;
+	margin: 0 auto;
 
 	@media(max-width:500px){
 		width: 90%;
@@ -153,20 +152,8 @@ p{
 
 .about-me{
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-around;	
 	
-	@media(max-width: 500px){
-		flex-wrap: wrap;
-	}
-
-	h2, h3{
-	color: @stem;
-	font-size: 1.8rem;
-
-	
-
-	}
-
 	.listen{
 		display: block;
 		width: 48%;
@@ -175,25 +162,37 @@ p{
 			width: 100%;
 			padding: 0 4%;
 			margin-bottom: 5%;
+			
 		}
+	
 	}
-
 	.skills{
-		display: block;
-		width: 50%;
+		display: flex;
 		text-align: left;
-
-		@media(max-width: 500px){
-			width: 100%;
-			padding: 4%;
-			justify-items: center;
-		}
+		align-items: center;
+		width: 45%;
+		 
 	}
+
+
+
+
+	h2, h3{
+		color: @stem;
+		font-size: 1.8rem;
+
+	
+
+	}
+
+	
 
 	TABLE{
 		width: 100%;
 		background: @flessh;
+		
 	}
+
 	td{
 		
 		border: 1px solid;
@@ -202,36 +201,42 @@ p{
 	
 }
 
+
 .history {
-	width: 100%;
-	text-align: left;
+	text-align: center;	
+
 	
-	
-	h3{
+	h3 {
+	margin:20px 0 10px;
 	font-size: 1.6rem;
+	color: @stem;
 	}
 
-	table{
+	table {
 	background: lightgrey;
 	width: 100%;
-	align-content: space-evenly;
 	
-	}
-	td{
-	border-top: 1px solid;
-	border-bottom: 1px solid;
-	height:50px;
-	justify-content: space-around;
-	}
-	tr:first-child{
-		background: white;
-		height: 50px;
+
+
+		td {
+		border-top: 1px solid;
+		border-bottom: 1px solid;
+		height:50px;
+		
+		}
 	
+		tr:nth-child(odd){
+			background: white;
+			height: 50px;
+			justify-content: center;
+			
+		
+		}
+	
+		
 	}
 
-	tr:nth-child(3){
-		background: white;
-	}
+	
 }
 
 
@@ -242,4 +247,4 @@ footer{
 	color: white;
 	background: grey;
 	margin-top: 40px;
-	}
+}

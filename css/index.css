@@ -138,13 +138,12 @@ body {
   margin: 0 auto;
   background: #5e3602;
 }
-.containter {
-  display: flex;
-  max-width: 600px;
+.container {
   font-size: 1.6rem;
+  margin: 0 auto;
 }
 @media (max-width: 500px) {
-  .containter {
+  .container {
     width: 90%;
   }
 }
@@ -202,17 +201,7 @@ p {
 }
 .about-me {
   display: flex;
-  justify-content: space-between;
-}
-@media (max-width: 500px) {
-  .about-me {
-    flex-wrap: wrap;
-  }
-}
-.about-me h2,
-.about-me h3 {
-  color: forestgreen;
-  font-size: 1.8rem;
+  justify-content: space-around;
 }
 .about-me .listen {
   display: block;
@@ -226,16 +215,15 @@ p {
   }
 }
 .about-me .skills {
-  display: block;
-  width: 50%;
+  display: flex;
   text-align: left;
+  align-items: center;
+  width: 45%;
 }
-@media (max-width: 500px) {
-  .about-me .skills {
-    width: 100%;
-    padding: 4%;
-    justify-items: center;
-  }
+.about-me h2,
+.about-me h3 {
+  color: forestgreen;
+  font-size: 1.8rem;
 }
 .about-me TABLE {
   width: 100%;
@@ -246,29 +234,26 @@ p {
   padding: 2%;
 }
 .history {
-  width: 100%;
-  text-align: left;
+  text-align: center;
 }
 .history h3 {
+  margin: 20px 0 10px;
   font-size: 1.6rem;
+  color: forestgreen;
 }
 .history table {
   background: lightgrey;
   width: 100%;
-  align-content: space-evenly;
 }
-.history td {
+.history table td {
   border-top: 1px solid;
   border-bottom: 1px solid;
   height: 50px;
-  justify-content: space-around;
 }
-.history tr:first-child {
+.history table tr:nth-child(odd) {
   background: white;
   height: 50px;
-}
-.history tr:nth-child(3) {
-  background: white;
+  justify-content: center;
 }
 footer {
   display: flex;
